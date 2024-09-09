@@ -1,0 +1,235 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #2d2d2c;
+}
+
+/* Navbar Styles */
+.navigation {
+    background-color: #f8f8f8;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    width: 28%;
+    text-align: center;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+nav ul li {
+    margin-right: 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #2d2d2c;
+    font-weight: bold;
+}
+
+/* Hero Image Section */
+.heroImg {
+    height: 600px;
+    background: url('../Images/Hero-Profile.png') center center;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end; /* Keep content aligned to the right */
+    align-items: center;
+    padding-right: 10%; /* Add buffer on the right side */
+    padding-left: 0%; /* Add buffer on the left side */
+}
+
+.heroImg .content {
+    background-color: rgba(255, 255, 255, 0.67);
+    padding: 20px;
+    color: #2d2d2c;
+    border-radius: 8px;
+    width: 40%;
+}
+
+.content h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 3em; 
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #e98142;
+    border: 2px solid #e98142;
+    border-radius: 8px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #e98142;
+    color: #fff;
+}
+
+/* Skills Section Styles */
+.mySkills {
+    padding: 20px;
+    background-color: #f4f4f4;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.flexContainer {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: flex-start;
+}
+
+.skill-card {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    min-height: 300px; /* Ensures consistent height */
+}
+
+.skill-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.skill-card p {
+    font-size: 1em;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Image Hover Effect */
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 120px;
+    text-align: center;
+}
+
+.image-container img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: auto;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.hover-image {
+    opacity: 0;
+}
+
+.image-container:hover .hover-image {
+    opacity: 1;
+}
+
+.image-container:hover .default-image {
+    opacity: 0;
+}
+
+/* My Work Section */
+.myWork {
+    padding: 40px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.myWork h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+.workGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.workGrid div {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+.workGrid img {
+    width: 40%;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-container h4 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.text-container p {
+    font-size: 1em;
+    color: #2d2d2c;
+}
+
+.workGrid button {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.workGrid button:hover {
+    background-color: #e98142;
+    color: #fff;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #373738;
+    color: #8b8b8b;
+    padding: 10px;
+    text-align: center;
+}
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+footer ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+footer a {
+    color: #fff;
+}  
+footer a:hover {
+    color: #e98142;
+}
+
+/* Separator Line */
+.separator {
+    height: 10px;
+    background-color: #e98142;
+    margin: 0;
+}
