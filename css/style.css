@@ -64,7 +64,7 @@ nav ul li a {
 
 button {
     padding: 10px 20px;
-    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.67);
     color: #e98142;
     border: 2px solid #e98142;
     border-radius: 8px;
@@ -73,6 +73,25 @@ button {
 button:hover {
     background-color: #e98142;
     color: #fff;
+}
+
+.resume-button {
+    padding: 10px 20px;
+    background-color:  rgba(255, 255, 255, 0.4);;
+    color: #e98142;
+    border: 2px solid #e98142;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: inline-block;
+    margin-top: 13px;
+}
+
+.resume-button:hover {
+    background-color: #e98142;
+    color: white;
 }
 
 /* Skills Section Styles */
